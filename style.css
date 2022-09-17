@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+
+}
+
+body * {
+    font-family: 'inter';
+    line-height: 160%;
+}
+
+header div {
+    text-align: center;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    left: 230px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    padding: 3px;
+
+    transition: transform .3s;
+}
+
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+}
+
+main {
+    animation: totop .3s;
+}
+main section {
+    animation: totop .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0;
+}
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+section {
+    color: white;
+
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);  
+    padding-top: 4px;
+    border-radius: 8px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+section h2 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #a1a1aa;
+} 
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+    margin-top: 24px;
+}
+
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.Games img {
+    width: 120px;
+    border-radius: 8px;
+}
+
+.Streamers img {
+    width: 70px;
+    border-radius: 50%;
+
+}
+
+header div {
+    animation: fromleft .3s;
+}
+
+@keyframes fromleft {
+    from {
+        opacity: 0;
+        transform: translateX(-130px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes totop {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
